@@ -1,7 +1,7 @@
-
 # Ejercicio 1: Determinantes 2x2
 
 ## 1. Determinante de A
+
 La matriz es:
 
 ```math
@@ -11,8 +11,16 @@ A = \begin{pmatrix}
 \end{pmatrix}
 ```
 
+### Procedimiento
+1. Identificar elementos:  
+   \(a=5,\ b=2,\ c=3,\ d=1\)
+2. Aplicar fórmula:  
 ```math
-\det(A) = (5)(1) - (2)(3) = -1
+\det(A) = (5)(1) - (2)(3)
+```
+3. Resultado:  
+```math
+\det(A) = -1
 ```
 
 ---
@@ -26,6 +34,7 @@ B = \begin{pmatrix}
 \end{pmatrix}
 ```
 
+### Procedimiento
 ```math
 \det(B) = (-1)(-8) - (4)(2) = 0
 ```
@@ -41,6 +50,7 @@ C = \begin{pmatrix}
 \end{pmatrix}
 ```
 
+### Procedimiento
 ```math
 \det(C) = (6)(3) - (9)(2) = 0
 ```
@@ -56,15 +66,16 @@ D = \begin{pmatrix}
 \end{pmatrix}
 ```
 
+### Procedimiento
 ```math
-\det(D) = (0)(0) - (5)(-5) = 25
+\det(D) = 0 - (-25) = 25
 ```
 
 ---
 
 # Ejercicio 2: Regla de Sarrus
 
-## 1. Determinante de E
+## Determinante de E
 
 ```math
 E = \begin{pmatrix}
@@ -74,17 +85,19 @@ E = \begin{pmatrix}
 \end{pmatrix}
 ```
 
-Diagonales principales:
+### Suma de diagonales:
 
 ```math
 (1)(1)(0) + (2)(4)(5) + (3)(0)(6) = 40
 ```
 
-Diagonales secundarias:
+### Resta de diagonales:
 
 ```math
--(3)(1)(5) - (1)(4)(6) - (2)(0)(0) = -39
+(3)(1)(5) + (1)(4)(6) + (2)(0)(0) = 39
 ```
+
+### Resultado:
 
 ```math
 \det(E) = 40 - 39 = 1
@@ -92,7 +105,7 @@ Diagonales secundarias:
 
 ---
 
-## 2. Determinante de F
+## Determinante de F
 
 ```math
 F = \begin{pmatrix}
@@ -102,17 +115,19 @@ F = \begin{pmatrix}
 \end{pmatrix}
 ```
 
-Principales:
+### Suma:
 
 ```math
-(2)(4)(-2) + (-1)(0)(3) + (3)(1)(2) = -10
+-16 + 0 + 6 = -10
 ```
 
-Secundarias:
+### Resta:
 
 ```math
--(3)(4)(3) - (2)(0)(2) - (-1)(1)(-2) = -38
+36 + 0 + 2 = 38
 ```
+
+### Resultado:
 
 ```math
 \det(F) = -10 - 38 = -48
@@ -132,31 +147,43 @@ G = \begin{pmatrix}
 
 ## Cofactor C11
 
+Submatriz:
+
 ```math
-C_{11} = \begin{vmatrix}
+\begin{pmatrix}
 3 & 1 \\
 0 & 1
-\end{vmatrix} = 3
+\end{pmatrix}
+```
+
+```math
+C_{11} = 3
 ```
 
 ## Cofactor C13
 
+Submatriz:
+
 ```math
-C_{13} = \begin{vmatrix}
+\begin{pmatrix}
 -1 & 3 \\
 2 & 0
-\end{vmatrix} = -6
+\end{pmatrix}
+```
+
+```math
+C_{13} = -6
 ```
 
 ## Resultado final
 
 ```math
-\det(G) = (1)(3) + (0)(C_{12}) + (2)(-6) = 3 - 12 = -9
+\det(G) = (1)(3) + (0) + (2)(-6) = -9
 ```
 
 ---
 
-# Ejercicio 4: Verificación de Propiedades
+# Ejercicio 4: Propiedades del Determinante
 
 Matrices:
 
@@ -174,7 +201,15 @@ B = \begin{pmatrix}
 \end{pmatrix}
 ```
 
-Producto:
+## Cálculo de determinantes
+
+```math
+\det(A)=5
+```
+
+```math
+\det(B)=-5
+```
 
 ```math
 AB = \begin{pmatrix}
@@ -183,23 +218,30 @@ AB = \begin{pmatrix}
 \end{pmatrix}
 ```
 
-Determinantes:
-
-```math
-\det(A) = 5
-```
-
-```math
-\det(B) = -5
-```
-
 ```math
 \det(AB) = -25
 ```
 
+### Verificación
+
+```math
+\det(A)\det(B) = -25
+```
+
+✔ Se verifica.
+
+```math
+\det(A^T)=5=\det(A)
+```
+
+✔ Se verifica.
+
 ---
 
-# Ejercicio 5: Aplicación Geométrica
+# Ejercicio 5: Área con Determinantes
+
+Vectores:  
+\(\vec u = (3,2)\), \(\vec v = (1,4)\)
 
 ```math
 M = \begin{pmatrix}
@@ -209,9 +251,25 @@ M = \begin{pmatrix}
 ```
 
 ```math
-\det(M) = 10
+\det(M)=10
 ```
+
+Área:
 
 ```math
 \text{Área} = 10
 ```
+
+Si se intercambian:
+
+```math
+\det(M')=-10
+```
+
+Área:
+
+```math
+|\det(M')|=10
+```
+
+El área **no cambia**.
