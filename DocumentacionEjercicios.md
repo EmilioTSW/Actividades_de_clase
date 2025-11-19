@@ -70,11 +70,7 @@ B =
 1. Elementos: \(a=-1,\ b=4,\ c=2,\ d=-8\).
 
 ```math
-\det(B) = (-1)(-8) - (4)(2)
-```
-
-```math
-\det(B) = 8 - 8 = 0
+\det(B) = (-1)(-8) - (4)(2) = 8 - 8 = 0
 ```
 
 **Resultado**
@@ -98,11 +94,7 @@ C =
 **Procedimiento**
 
 ```math
-\det(C) = (6)(3) - (9)(2)
-```
-
-```math
-\det(C) = 18 - 18 = 0
+\det(C) = (6)(3) - (9)(2) = 18 - 18 = 0
 ```
 
 **Resultado**
@@ -126,11 +118,7 @@ D =
 **Procedimiento**
 
 ```math
-\det(D) = (0)(0) - (5)(-5)
-```
-
-```math
-\det(D) = 0 - (-25) = 25
+\det(D) = (0)(0) - (5)(-5) = 0 - (-25) = 25
 ```
 
 **Resultado**
@@ -178,28 +166,28 @@ E =
 
 #### Suma de diagonales principales
 
-1. \(1 \cdot 1 \cdot 0 = 0\)
-2. \(2 \cdot 4 \cdot 5 = 40\)
-3. \(3 \cdot 0 \cdot 6 = 0\)
-
 ```math
-\text{Suma} = 0 + 40 + 0 = 40
+\text{Suma} =
+1\cdot 1\cdot 0
++ 2\cdot 4\cdot 5
++ 3\cdot 0\cdot 6
+= 0 + 40 + 0 = 40
 ```
 
 #### Suma de diagonales secundarias
 
-1. \(3 \cdot 1 \cdot 5 = 15\)
-2. \(1 \cdot 4 \cdot 6 = 24\)
-3. \(2 \cdot 0 \cdot 0 = 0\)
-
 ```math
-\text{Resta} = 15 + 24 + 0 = 39
+\text{Resta} =
+3\cdot 1\cdot 5
++ 1\cdot 4\cdot 6
++ 2\cdot 0\cdot 0
+= 15 + 24 + 0 = 39
 ```
 
 #### Determinante
 
 ```math
-\det(E) = 40 - 39 = 1
+\det(E) = \text{Suma} - \text{Resta} = 40 - 39 = 1
 ```
 
 **Resultado**
@@ -223,28 +211,28 @@ F =
 
 #### Suma de diagonales principales
 
-1. \(2 \cdot 4 \cdot (-2) = -16\)
-2. \((-1) \cdot 0 \cdot 3 = 0\)
-3. \(3 \cdot 1 \cdot 2 = 6\)
-
 ```math
-\text{Suma} = -16 + 0 + 6 = -10
+\text{Suma} =
+2\cdot 4\cdot (-2)
++ (-1)\cdot 0\cdot 3
++ 3\cdot 1\cdot 2
+= -16 + 0 + 6 = -10
 ```
 
 #### Suma de diagonales secundarias
 
-1. \(3 \cdot 4 \cdot 3 = 36\)
-2. \(2 \cdot 0 \cdot 2 = 0\)
-3. \((-1) \cdot 1 \cdot (-2) = 2\)
-
 ```math
-\text{Resta} = 36 + 0 + 2 = 38
+\text{Resta} =
+3\cdot 4\cdot 3
++ 2\cdot 0\cdot 2
++ (-1)\cdot 1\cdot (-2)
+= 36 + 0 + 2 = 38
 ```
 
 #### Determinante
 
 ```math
-\det(F) = -10 - 38 = -48
+\det(F) = \text{Suma} - \text{Resta} = -10 - 38 = -48
 ```
 
 **Resultado**
@@ -372,7 +360,7 @@ B =
 \end{pmatrix}
 ```
 
-Las propiedades a verificar son:
+Propiedades a verificar:
 
 1. ```math
    \det(AB) = \det(A)\det(B)
